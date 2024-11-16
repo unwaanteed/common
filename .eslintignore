@@ -1,0 +1,10 @@
+# Build directories
+dist/*
+**/node_modules/*
+
+# eslintrc
+**/.eslintrc.*
+
+# prettier
+**/.prettier.*
+**/prettier.config.*
