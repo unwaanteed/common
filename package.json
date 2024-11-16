@@ -10,6 +10,17 @@
   "files": [
     "dist"
   ],
+  "engines": {
+    "node": ">=16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unwaanteed/common.git"
+  },
+  "bugs": {
+    "url": "https://github.com/unwaanteed/common/issues"
+  },
+  "homepage": "https://github.com/unwaanteed/common#readme",
   "scripts": {
     "build": "del-cli dist && tsc -p ./tsconfig.build.json && tsc -p ./tsconfig.esm.json",
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
