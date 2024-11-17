@@ -1,6 +1,6 @@
 {
   "name": "@unwanted/common",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Some useful primitives",
   "author": "OverPhoenix",
   "license": "MIT",
@@ -23,15 +23,17 @@
   "homepage": "https://github.com/unwaanteed/common#readme",
   "scripts": {
     "build": "del-cli dist && tsc -p ./tsconfig.build.json && tsc -p ./tsconfig.esm.json",
-    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
-    "lint:fix": "eslint --fix \"src/**/*.{js,jsx,ts,tsx}\"",
-    "fm:check": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\"",
-    "fm:fix": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
+    "lint": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
+    "lint:fix": "eslint --fix \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
+    "fm:check": "prettier --check \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
+    "fm:fix": "prettier --write \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
     "test": "jest",
     "check-deps": "npx npm-check-updates --deep",
     "update-deps": "npx npm-check-updates --deep -u"
   },
   "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@types/jest": "^29.5.14",
     "@types/node": "^22.9.0",
     "@typescript-eslint/eslint-plugin": "^8.14.0",
     "@typescript-eslint/parser": "^8.14.0",
@@ -49,7 +51,9 @@
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-unused-imports": "^4.1.4",
     "globals": "^15.12.0",
+    "jest": "^29.7.0",
     "prettier": "^3.3.3",
+    "ts-jest": "^29.2.5",
     "typescript": "^5.6.3",
     "typescript-eslint": "^8.14.0"
   }
